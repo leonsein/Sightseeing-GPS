@@ -4,7 +4,6 @@ import Loading from './components/Loading'; // Asegúrate de tener la ruta corre
 import Login from './components/Login';
 import Register from './components/REgister';
 import ForgotPassword from './components/ForgotPassword';
-import Home from './components/Home'
 import Logout from './components/Logout';
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/logout" element={<Logout />} />
       </Routes>
     </Router>
