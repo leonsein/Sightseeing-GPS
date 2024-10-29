@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import './Loading.css'; // Asegúrate de que este archivo CSS existe
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faAmbulance, faMapMarkerAlt, faUserMd } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 
 const Loading = () => {
@@ -12,7 +12,7 @@ const Loading = () => {
     // Redirige después de 3 segundos (3000 ms)
     const timer = setTimeout(() => {
       navigate('/login'); // Redirige a la ruta de inicio de sesión
-    }, 1200);
+    }, 1800);
 
     // Limpia el temporizador si el componente se desmonta
     return () => clearTimeout(timer);
@@ -21,8 +21,8 @@ const Loading = () => {
   return (
     <div className="loading-container">
       {/* Aquí está el icono de mapa */}
-      <FontAwesomeIcon icon={faMapMarkerAlt} size="3x" className="loading-icon" />
-      <h2>Cargando...</h2> {/* Puedes personalizar el texto que desees */}
+      <FontAwesomeIcon icon={faAmbulance} size="3x" className="loading-icon" />
+      <h2>Iniciando...</h2> {/* Puedes personalizar el texto que desees */}
     </div>
   );
 };

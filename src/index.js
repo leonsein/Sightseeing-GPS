@@ -11,6 +11,15 @@ root.render(
   </React.StrictMode>
 );
 
+// Registro del Service Worker
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js").then((reg) => {
+    console.log("Service Worker registrado exitosamente", reg);
+  }).catch((error) => {
+    console.error("Error al registrar Service Worker", error);
+  });
+}
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
