@@ -1,0 +1,24 @@
+/* src/components/Loading.css */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: white; /* Fondo blanco */
+  }
+  
+  .loading-icon {
+    color: #4CAF50; /* Cambia el color del icono si lo deseas */
+    animation: spin 1s linear infinite; /* Puedes agregar animación si lo deseas */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

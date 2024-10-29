@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Color de fondo suave */
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.login-box {
+  background-color: white; /* Fondo blanco para el formulario */
+  padding: 40px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  width: 300px; /* Ancho fijo del formulario */
+  text-align: center; /* Centra el texto */
+}
+
+.login-title {
+  font-size: 28px; /* Título más grande */
+  margin-bottom: 20px;
+  color: #333; /* Color del texto */
+}
+
+.login-error {
+  color: red; /* Color del mensaje de error */
+  margin-bottom: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  padding: 12px;
+  margin-bottom: 15px; /* Espacio entre inputs */
+  border: 1px solid #ddd; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px;
+  transition: border-color 0.3s; /* Transición suave */
+}
+
+.login-input:focus {
+  border-color: #4CAF50; /* Cambia el color del borde al enfocar */
+  outline: none; /* Quita el contorno predeterminado */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Sombra al enfocar */
+}
+
+.login-button {
+  padding: 12px;
+  background-color: #4CAF50; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s; /* Transición suave */
+}
+
+.login-button:hover {
+  background-color: #45a049; /* Color del botón al pasar el mouse */
+}
+
+.google-login-button {
+  display: flex; /* Para alinear el icono y el texto */
+  align-items: center; /* Centra verticalmente el contenido */
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #ddd; /* Borde gris claro */
+  padding: 12px; /* Espaciado */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s; /* Transición suave */
+  margin-top: 10px; /* Espacio arriba del botón */
+}
+
+.google-login-button:hover {
+  background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+
+.google-icon {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.login-footer {
+  margin-top: 15px;
+  color: #555; /* Color del texto de pie de página */
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+.login-footer a {
+  color: #4CAF50; /* Color del enlace */
+  text-decoration: none; /* Quita el subrayado */
+  transition: text-decoration 0.3s; /* Transición suave */
+}
+
+.login-footer a:hover {
+  text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
+
+.forgot-password {
+  margin-top: 15px; /* Espacio arriba del texto */
+  color: #555; /* Color del texto */
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+.forgot-password a {
+  color: #4CAF50; /* Color del enlace */
+  text-decoration: none; /* Quita el subrayado */
+  transition: text-decoration 0.3s; /* Transición suave */
+}
+
+.forgot-password a:hover {
+  text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
+
+.login-success {
+  color: #4CAF50; /* Color verde para mensajes de éxito */
+  margin-top: 10px; /* Espacio arriba del mensaje */
+  font-size: 14px; /* Tamaño de fuente */
+}
