@@ -22,7 +22,7 @@ const Loading = () => {
     <div className="loading-container">
       {/* Aquí está el icono de mapa */}
       <FontAwesomeIcon icon={faAmbulance} size="3x" className="loading-icon" />
-      <h2>Iniciando...</h2> {/* Puedes personalizar el texto que desees */}
+      <h2>Cargando...</h2> {/* Puedes personalizar el texto que desees */}
     </div>
   );
 };
